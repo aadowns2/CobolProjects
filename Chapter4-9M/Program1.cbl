@@ -18,7 +18,7 @@
                        File Status is WS-File-Status
                        Organization is Line Sequential.
                        
-                   Select SalaryFile assign to EmployeeReport
+                   Select SalaryFile assign to Printer
                        File Status is WS-File-Status
                        Organization is Line Sequential.
                        
@@ -76,7 +76,7 @@
        
        400-Write-Records.
            MOVE In-Employee-Name TO Employee-Name.
-           WRITE Salary-Record.
+           WRITE Salary-Record BEFORE ADVANCING 1 LINE.
        
        500-Close-Program.
            CLOSE EmployeeFile
